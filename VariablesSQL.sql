@@ -10,11 +10,11 @@ DECLARE @current_time time = GETDATE()
 
 IF @current_time > CONVERT(time, '06:00:00') AND @current_time < CONVERT(time, '18:00:00')
 	BEGIN
-		PRINT 'Добрый день'
+		PRINT 'Good day'
 	END
 ELSE
 	BEGIN
-		PRINT 'Добрый вечер'
+		PRINT 'Good evening'
 	END
 
 
